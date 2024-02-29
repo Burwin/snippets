@@ -25,3 +25,18 @@ cat <<EOT > src/index.css
 @tailwind components;
 @tailwind utilities;
 EOT
+
+# install tailwind-ui
+npm install @headlessui/vue @heroicons/vue
+
+# install vitepress
+npm add -D vitepress
+
+# gitignore vitepress
+echo "# vitepress" >> .gitignore
+echo ".vitepress/dist" >> .gitignore
+echo ".vitepress/cache" >> .gitignore
+
+# setup vitepress
+npx vitepress init
+
