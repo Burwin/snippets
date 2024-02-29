@@ -34,8 +34,8 @@ npm add -D vitepress
 
 # gitignore vitepress
 echo "# vitepress" >> .gitignore
-echo ".vitepress/dist" >> .gitignore
-echo ".vitepress/cache" >> .gitignore
+echo "**/.vitepress/dist" >> .gitignore
+echo "**/.vitepress/cache" >> .gitignore
 
 # setup vitepress
 npx vitepress init
