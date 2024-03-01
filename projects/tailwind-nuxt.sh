@@ -60,7 +60,7 @@ git add .
 git commit -m "add tailwind directives to css"
 
 # add the css file globally
-cat <<EOT > nuxt.config.js
+cat <<EOT > nuxt.config.ts
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
