@@ -3,7 +3,13 @@ npx nuxi init
 git add .
 git commit -m "install nuxt"
 
-# TODO: move all nuxt-app files out of sub-folder back into root
+# move all nuxt-app files out of sub-folder back into root
+mv nuxt-app/* .
+mv nuxt-app/.gitignore .gitignore
+mv nuxt-app/.nuxt .nuxt
+rmdir nuxt-app
+git add .
+git commit -m "move nuxt to parent directory"
 
 # install tailwind
 npm i -D tailwindcss postcss autoprefixer
