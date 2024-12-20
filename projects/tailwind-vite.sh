@@ -5,7 +5,7 @@ echo "Enter the name of your Vue project:"
 read PROJECT_NAME
 
 # Create a new Vue project using Vite
-npm create vite@latest "$PROJECT_NAME" -- --template vue
+npm create vite@latest "$PROJECT_NAME" -- --template vue-ts
 
 # Change directory into the new project folder
 cd "$PROJECT_NAME" || exit
