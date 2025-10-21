@@ -10,6 +10,9 @@ winget install Git.Git
 
 # install vscode
 winget install Microsoft.VisualStudioCode
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension bierner.markdown-mermaid
+code --install-extension redhat.vscode-yaml
 ## TODO: configure, either with prompts or command arguments
 ## TODO: add basic extensions
 ## TODO: set default shortcuts ('code .', 'open in code...') and env vars?
