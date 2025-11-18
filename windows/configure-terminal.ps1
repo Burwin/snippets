@@ -14,3 +14,6 @@ choco install nerd-fonts-jetbrainsmono
 # install starship to powershell
 winget install Starship.Starship
 "Invoke-Expression (&starship init powershell)" | Out-File -FilePath $PROFILE -Encoding UTF8 -Append
+
+# TODO: install/confirm bash and add profile to Windows Terminal
+echo "TODO: install/confirm bash and add profile to Windows Terminal"
