@@ -8,5 +8,10 @@ if (-not $isAdmin) {
 # install chrome
 winget install Google.Chrome
 ## TODO: install 1password extension?
+echo "TODO: install 1password extension?"
+
 ## TODO: configure 1password?
+echo "TODO: configure 1password?"
+
 ## TODO: import template profile (bookmarks / settings)?
+echo "TODO: import template profile (bookmarks / settings)?"
