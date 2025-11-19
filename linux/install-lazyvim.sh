@@ -15,4 +15,12 @@ sudo install lazygit -D -t /usr/local/bin/
 rm lazygit.tar.gz
 rm lazygit
 
+# install ripgrep
+RIPGREP_VERSION=$(curl -sL "https://api.github.com/repos/BurntSushi/ripgrep/releases/latest" -H "Accept: application/vnd.github+json" | jq -r .tag_name)
+RIPGREP_FILE="ripgrep_$RIPGREP_VERSION-1_amd64.deb"
+RIPGREP_URL="https://github.com/BurntSushi/ripgrep/releases/download/$RIPGREP_VERSION/$RIPGREP_FILE"
+curl -LO $RIPGREP_URL
+sudo dpkg -i $RIPGREP_FILE
+rm $RIPGREP_FILE
+
 # todo... https://lazyvim-ambitious-devs.phillips.codes/course/chapter-1/#_linux
