@@ -1,3 +1,4 @@
+#!/bin/bash
 # INSTALL LAZYVIM
 
 # install neovim
