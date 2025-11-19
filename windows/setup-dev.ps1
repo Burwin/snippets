@@ -14,5 +14,5 @@ if (-not $isAdmin) {
 .\install-dotnet.ps1
 
 # install LazyVim on WSL
-cd ~
-sudo snap install nvim --classic
+cd ../linux
+bash ./install-lazyvim.sh
