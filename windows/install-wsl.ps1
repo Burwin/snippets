@@ -8,4 +8,8 @@ if (-not $isAdmin) {
 winget install Microsoft.WSL
 wsl install Ubuntu
 sudo apt install jq -y
+
+# install gh cli
 sudo apt install gh -y
+# TODO: configure GH_TOKEN env var with a gh api auth token
+echo "TODO: configure GH_TOKEN env var with a gh api auth token"
