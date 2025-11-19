@@ -41,3 +41,7 @@ ln -s $(which fdfind) ~/.local/bin/fd
 ## add $HOME/.local/bin to path (for which terminal?)
 echo '# Add fd as alias for fdfind (fd-find package)' >> ~/.bashrc
 echo 'alias fd=fdfind' >> ~/.bashrc
+
+# clone lazyvim starter template
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
