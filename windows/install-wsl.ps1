@@ -7,4 +7,4 @@ if (-not $isAdmin) {
 
 winget install Microsoft.WSL
 wsl install Ubuntu
-sudo apt install jq
+sudo apt install jq -y
