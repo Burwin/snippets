@@ -24,7 +24,7 @@ sudo dpkg -i $RIPGREP_FILE
 rm $RIPGREP_FILE
 
 # install [fd (fd-find)](https://github.com/sharkdp/fd)
-# todo: get version
+FD_VERSION=$(curl -sL "https://api.github.com/repos/sharkdp/fd/releases/latest" -H "Accept: application/vnd.github+json" | jq -r '.tag_name[1:]')
 # todo: download package
 # todo: install package
 # todo: add link to fd
