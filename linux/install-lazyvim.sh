@@ -25,9 +25,19 @@ rm $RIPGREP_FILE
 
 # install [fd (fd-find)](https://github.com/sharkdp/fd)
 FD_VERSION=$(curl -sL "https://api.github.com/repos/sharkdp/fd/releases/latest" -H "Accept: application/vnd.github+json" | jq -r '.tag_name[1:]')
-# todo: download package
-# todo: install package
-# todo: add link to fd
-# todo: add $HOME/.local/bin to path (for which terminal?)
+FD_FILE="fd_"$FD_VERSION"_amd64.deb"
+curl -LO "https://github.com/sharkdp/fd/releases/download/v$FD_VERSION/$FD_FILE"
+sudo dpkg -i $FD_FILE
+rm $FD_FILE
 
-# todo... https://lazyvim-ambitious-devs.phillips.codes/course/chapter-1/#_linux
+## add link to fd
+cd .local
+mkdir bin
+cd bin
+mkdir fd
+cd ../..
+ln -s $(which fdfind) ~/.local/bin/fd
+
+## add $HOME/.local/bin to path (for which terminal?)
+echo '# Add fd as alias for fdfind (fd-find package)' >> ~/.bashrc
+echo 'alias fd=fdfind' >> ~/.bashrc
