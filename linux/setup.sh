@@ -4,6 +4,10 @@ sudo pacman -S stow
 # configure stow
 # TODO
 
+##TODO: make sure ssh service is installed and configured
+systemctl --user daemon-reload
+systemctl --user enable --now ssh-agent
+
 ### most of these are setup automatically by omarchy... skip for now
 # install curl
 # install/configure terminal
