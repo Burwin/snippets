@@ -5,6 +5,7 @@ sudo pacman -S stow
 # TODO
 
 ##TODO: make sure ssh service is installed and configured
+echo "make sure ssh-agent.service is defined/copied into systemd before running this..."
 systemctl --user daemon-reload
 systemctl --user enable --now ssh-agent
 
